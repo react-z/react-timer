@@ -1,0 +1,13 @@
+.timer {
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.timer .title {
+  color: #343434;  
+}
+.timer .seconds {
+  color: #03CC85;
+  font-weight: bold;  
+}

@@ -4,7 +4,7 @@ React timer is a simple timer component written in react.
 
 ## Installation
 
-`npm install react-data-components --save`
+`npm install react-timer --save`
 
 ## Usage
 

@@ -1,0 +1,22 @@
+{
+  "name": "reactable",
+  "version": "0.9.3",
+  "description": "a simple timer component",
+  "main": "react-timer.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StevenIseki/react-timer.git"
+  },
+  "author": "Steven Iseki",
+  "license": "MIT",
+  "homepage": "https://github.com/StevenIseki/react-timer.git",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-react": "*",
+    "mocha": "*"
+  },
+  "keywords": ["react-component", "react", "timer"]
+}

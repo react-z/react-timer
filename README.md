@@ -1,5 +1,4 @@
 # react-timer
-A simple react timer component
 =========
 
 React timer is a simple timer component written in react.

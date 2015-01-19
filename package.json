@@ -2,7 +2,7 @@
   "name": "reactable",
   "version": "0.9.3",
   "description": "a simple timer component",
-  "main": "react-timer.js",
+  "main": "timer.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/StevenIseki/react-timer.git"

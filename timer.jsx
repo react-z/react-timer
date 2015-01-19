@@ -22,3 +22,5 @@ var Timer = React.createClass({
     );
   }
 });
+
+module.exports = Timer;

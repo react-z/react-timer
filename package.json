@@ -1,5 +1,5 @@
 {
-  "name": "reactable",
+  "name": "react-timer",
   "version": "0.9.3",
   "description": "a simple timer component",
   "main": "timer.js",

@@ -1,6 +1,6 @@
 {
-  "name": "react-timer",
-  "version": "0.9.3",
+  "name": "react-todo",
+  "version": "0.0.3",
   "description": "a simple timer component",
   "main": "timer.js",
   "repository": {
@@ -15,6 +15,12 @@
   },
   "devDependencies": {
     "gulp": "*",
+    "connect": "*",
+    "connect-livereload": "*",
+    "gulp-livereload": "*",
+    "serve-static": "*",
+    "serve-index": "*",
+    "opn": "*",
     "gulp-react": "*",
     "mocha": "*"
   },

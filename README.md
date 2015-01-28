@@ -19,13 +19,7 @@ var Timer = require('react-timer');
 */
 var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
-React.render(
-	React.createElement(
-		Timer, 
-		{options: OPTIONS}
-	),
-	document.getElementById("container")
-);
+React.renderComponent(<Timer options={OPTIONS} />, document.getElementById("container"));
 
 ```
 

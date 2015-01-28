@@ -1,6 +1,6 @@
 {
   "name": "react-timer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a simple timer component",
   "main": "jsx/timer.js",
   "repository": {
@@ -29,5 +29,11 @@
     "vinyl-source-stream": "*",
     "mocha": "*"
   },
-  "keywords": ["react-component", "react", "timer", "browserify", "pure css"]
+  "keywords": [
+    "react-component",
+    "react",
+    "timer",
+    "browserify",
+    "pure css"
+  ]
 }

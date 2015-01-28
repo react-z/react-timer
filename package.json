@@ -1,15 +1,15 @@
 {
   "name": "react-todo",
-  "version": "0.0.3",
-  "description": "a simple timer component",
-  "main": "timer.js",
+  "version": "0.0.1",
+  "description": "a simple todo component",
+  "main": "jsx/todo.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StevenIseki/react-timer.git"
+    "url": "https://github.com/StevenIseki/react-todo.git"
   },
   "author": "Steven Iseki",
   "license": "MIT",
-  "homepage": "https://github.com/StevenIseki/react-timer.git",
+  "homepage": "https://github.com/StevenIseki/react-todo.git",
   "peerDependencies": {
     "react": "*"
   },
@@ -22,7 +22,12 @@
     "serve-index": "*",
     "opn": "*",
     "gulp-react": "*",
+    "react": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
     "mocha": "*"
   },
-  "keywords": ["react-component", "react", "timer"]
+  "keywords": ["react-component", "react", "todo"]
 }

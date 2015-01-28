@@ -1,6 +1,8 @@
 # react-timer
 
-React timer is a simple timer component written in react.
+react-timer is a simple timer component using react.js.
+
+![](example/screenshot.png)
 
 ## Installation
 
@@ -12,15 +14,23 @@ React timer is a simple timer component written in react.
 var React = require('react');
 var Timer = require('react-timer');
 
-React.renderComponent(
-    <Timer className="timer" data={[
-        { Name: 'Griffin Smith', Age: 18 },
-        { Age: 23,  Name: 'Lee Salminen' },
-        { Age: 28, Position: 'Developer' },
-    ]} />,
-    document.getElementById('table')
-);
+React.renderComponent(<Timer />, document.getElementById("container"));
+
 ```
+
+## Styles
+
+Include the minimal timer.css styles, or customize with your own styling
+
+## Development
+
+Initial set up, run:
+    
+    npm install
+
+For watch on files, live reload, JSX transpiling and browserify, run:
+
+    gulp
 
 ## License
 

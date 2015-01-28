@@ -1,6 +1,5 @@
 var React = require('react');
 var Timer = require('../jsx/timer.jsx');
-
 var OPTIONS = { prefix: 'seconds elapsed!' }
 
 React.render(

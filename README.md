@@ -14,9 +14,7 @@ react-timer is a simple timer component using react.js.
 var React = require('react');
 var Timer = require('react-timer');
 
-/* delay is the delay on showing the update of the timer,
- it does not effect the timer clock.
-*/
+// delay option is the delay on showing the update of the timer, it does not effect the timer clock.
 var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
 React.renderComponent(<Timer options={OPTIONS} />, document.getElementById("container"));

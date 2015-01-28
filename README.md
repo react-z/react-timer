@@ -14,13 +14,26 @@ react-timer is a simple timer component using react.js.
 var React = require('react');
 var Timer = require('react-timer');
 
-React.renderComponent(<Timer />, document.getElementById("container"));
+/* delay is the delay on showing the update of the timer,
+ it does not effect the timer clock.
+*/
+var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+
+React.render(
+	React.createElement(
+		Timer, 
+		{options: OPTIONS}
+	),
+	document.getElementById("container")
+);
 
 ```
 
 ## Styles
 
-Include the minimal timer.css styles, or customize with your own styling
+All React UI components are made to be compatible with [pure CSS](http://purecss.io/) which gives some nice responsive styles. 
+
+The components can also be used with your own custom style sheets. A minimal timer.css style sheet is included as a guide.
 
 ## Development
 

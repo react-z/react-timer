@@ -1,29 +1,23 @@
 .react-timer {
     margin: 0;
-    padding: 20px;
-    font-size: 24px;
+    padding: 2em;
 }
 
-.react-timer .title {
-  color: #343434;  
+.react-timer .button-secondary {
+  background: #fff;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.react-timer .pure-button {
+  margin: 0.25em;
+  font-weight: 200;
 }
 
 .react-timer .seconds {
-  color: #03CC85;
-  font-weight: bold;  
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.react-timer .btn {
-  color: #343434;
-  background-color: #03CC85;
-  padding: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  width: 100px;
-  border: 0;
-  box-shadow: 0px 5px 0px #03CC85;
-  border-radius: 5px;
-  font-weight: bold;
+  font-size: 200%;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  color: #666;
 }

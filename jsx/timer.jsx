@@ -31,30 +31,36 @@ var Timer = React.createClass({
   play: function() {
     if (!this.interval) {
       this.offset   = Date.now();
-      this.interval = setInterval(this.update, 100); // 100 is delay
+      this.interval = setInterval(this.update, this.props.options.delay); // 100 is delay
     }
   },
   /** 
    * Reset the timer.
   **/
   reset: function() {
-    this.setState({clock: 0 });
+    var clockReset = 0;
+    this.setState({clock: clockReset });
+    var time = SecondsTohhmmss(clockReset / 1000);
+    this.setState({time: time });    
   },
   /** 
    * Increment the timer.
   **/
   update: function() {
     var clock = this.state.clock;
-    clock += this.delta();
+    clock += this.calculateOffset();
     this.setState({clock: clock });
     var time = SecondsTohhmmss(clock / 1000);
     this.setState({time: time });    
   },
-  delta: function() {
+  /** 
+   * Calculate the offset time.
+  **/
+  calculateOffset: function() {
     var now = Date.now(),
-        d   = now - this.offset;    
+        o   = now - this.offset;    
     this.offset = now;
-    return d;
+    return o;
   },
   componentDidMount: function() {
     this.play();
@@ -64,15 +70,16 @@ var Timer = React.createClass({
   },  
   render: function(){
     return (
+
       <div className="react-timer">
-       <span className="seconds"> {this.state.time}</span>
-       <span className="title">{this.state.prefix}</span>
+
+      <h3 className="seconds"> {this.state.time} {this.state.prefix}</h3>          
 
        <br />
 
-       <button onClick={this.reset} className="btn">reset</button>
-       <button onClick={this.play} className="btn">play</button>
-       <button onClick={this.pause} className="btn">pause</button>
+       <button onClick={this.reset} className="pure-button button-secondary">reset</button>
+       <button onClick={this.play} className="pure-button button-secondary">play</button>
+       <button onClick={this.pause} className="pure-button button-secondary">pause</button>
       </div>
     );
   }

@@ -2,7 +2,7 @@
   "name": "react-timer",
   "version": "0.0.2",
   "description": "a simple timer component",
-  "main": "jsx/timer.js",
+  "main": "js/timer.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/StevenIseki/react-timer.git"

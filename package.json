@@ -1,6 +1,6 @@
 {
   "name": "react-timer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a simple timer component",
   "main": "js/timer.js",
   "repository": {
@@ -42,7 +42,7 @@
       "android-browser/latest"
     ]
   },
-    "scripts": {
+  "scripts": {
     "test": "tape test/tests.js"
   },
   "keywords": [

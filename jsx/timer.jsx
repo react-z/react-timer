@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 
 var React = require('react');
-var SecondsTohhmmss = require('./SecondsTohhmmss.jsx');
+var SecondsTohhmmss = require('../js/SecondsTohhmmss.js');
 
 /**
  * Timer module

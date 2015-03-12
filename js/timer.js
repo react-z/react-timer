@@ -69,17 +69,41 @@ var Timer = React.createClass({displayName: "Timer",
     this.pause();
   },  
   render: function(){
+    
+    /* TODO: remove dependancy on PureCSS */
+    var timerStyle = {
+      margin: "0",
+      padding: "2em"
+    };
+
+    var buttonStyle = {
+      background: "#fff",
+      color: "#666",
+      border: "1px solid #ddd",
+      margin: "0.25em",
+      fontWeight: "200"
+    };
+
+    var secondsStyles = {
+      fontSize: "200%",
+      fontWeight: "200",
+      lineHeight: "1.5",
+      margin: "0",
+      color: "#666"
+    };
+
+
     return (
 
-      React.createElement("div", {className: "react-timer"}, 
+      React.createElement("div", {style: timerStyle, className: "react-timer"}, 
 
-      React.createElement("h3", {className: "seconds"}, " ", this.state.time, " ", this.state.prefix), 
+      React.createElement("h3", {style: secondsStyles, className: "seconds"}, " ", this.state.time, " ", this.state.prefix), 
 
        React.createElement("br", null), 
 
-       React.createElement("button", {onClick: this.reset, className: "pure-button button-secondary"}, "reset"), 
-       React.createElement("button", {onClick: this.play, className: "pure-button button-secondary"}, "play"), 
-       React.createElement("button", {onClick: this.pause, className: "pure-button button-secondary"}, "pause")
+       React.createElement("button", {onClick: this.reset, style: buttonStyle, className: "pure-button button-secondary"}, "reset"), 
+       React.createElement("button", {onClick: this.play, style: buttonStyle, className: "pure-button button-secondary"}, "play"), 
+       React.createElement("button", {onClick: this.pause, style: buttonStyle, className: "pure-button button-secondary"}, "pause")
       )
     );
   }

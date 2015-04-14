@@ -21,10 +21,6 @@ React.renderComponent(<Timer options={OPTIONS} />, document.getElementById("cont
 
 ```
 
-## Styles
-
-react-timer can be used with your own custom styles. A minimal timer.css style sheet is included as a guide.
-
 ## Development
 
 Initial set up, run:

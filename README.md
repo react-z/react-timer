@@ -23,9 +23,7 @@ React.renderComponent(<Timer options={OPTIONS} />, document.getElementById("cont
 
 ## Styles
 
-All React UI components are made to be compatible with [pure CSS](http://purecss.io/) which gives some nice responsive styles. 
-
-The components can also be used with your own custom style sheets. A minimal timer.css style sheet is included as a guide.
+react-timer can be used with your own custom styles. A minimal timer.css style sheet is included as a guide.
 
 ## Development
 

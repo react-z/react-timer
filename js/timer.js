@@ -70,7 +70,6 @@ var Timer = React.createClass({displayName: "Timer",
   },  
   render: function(){
     
-    /* TODO: remove dependancy on PureCSS */
     var timerStyle = {
       margin: "0",
       padding: "2em"
@@ -81,6 +80,7 @@ var Timer = React.createClass({displayName: "Timer",
       color: "#666",
       border: "1px solid #ddd",
       margin: "0.25em",
+      padding: "0.75em",
       fontWeight: "200"
     };
 
@@ -93,6 +93,7 @@ var Timer = React.createClass({displayName: "Timer",
     };
 
 
+
     return (
 
       React.createElement("div", {style: timerStyle, className: "react-timer"}, 
@@ -101,9 +102,9 @@ var Timer = React.createClass({displayName: "Timer",
 
        React.createElement("br", null), 
 
-       React.createElement("button", {onClick: this.reset, style: buttonStyle, className: "pure-button button-secondary"}, "reset"), 
-       React.createElement("button", {onClick: this.play, style: buttonStyle, className: "pure-button button-secondary"}, "play"), 
-       React.createElement("button", {onClick: this.pause, style: buttonStyle, className: "pure-button button-secondary"}, "pause")
+       React.createElement("button", {onClick: this.reset, style: buttonStyle}, "reset"), 
+       React.createElement("button", {onClick: this.play, style: buttonStyle}, "play"), 
+       React.createElement("button", {onClick: this.pause, style: buttonStyle}, "pause")
       )
     );
   }

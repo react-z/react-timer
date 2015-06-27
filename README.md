@@ -11,7 +11,7 @@ react-timer is a simple timer component using react.js.
 ```javascript
 
 import React from 'react'
-import Timer from '../lib/timer'
+import Timer from 'react-timer'
 
 let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 

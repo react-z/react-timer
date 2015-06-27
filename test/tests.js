@@ -1,5 +1,5 @@
 var test = require('tape');
-var SecondsTohhmmss = require('../js/SecondsTohhmmss.js');
+var SecondsTohhmmss = require('../lib/SecondsTohhmmss');
 
 test('Seconds is converted correctly to string output', function (t) {
     t.equal(SecondsTohhmmss(2), "00:00:02");

@@ -1,14 +1,11 @@
-var React = require('react');
-var Timer = require('../jsx/timer.jsx');
+import React from 'react'
+import Timer from '../lib/timer'
 
 // delay is the delay on showing the update of the timer,
 // it does not effect the timer clock.
-var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
 React.render(
-	React.createElement(
-		Timer, 
-		{options: OPTIONS}
-	),
+	<Timer options={OPTIONS} />,
 	document.getElementById("container")
 );

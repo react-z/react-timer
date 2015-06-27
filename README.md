@@ -2,8 +2,6 @@
 
 react-timer is a simple timer component using react.js.
 
-![](example/screenshot.png)
-
 ## Installation
 
 `npm install react-timer --save`
@@ -11,21 +9,24 @@ react-timer is a simple timer component using react.js.
 ## Usage
 
 ```javascript
-var React = require('react');
-var Timer = require('react-timer');
 
-// delay option is the delay on showing the update of the timer, it does not effect the timer clock.
-var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+import React from 'react'
+import Timer from '../lib/timer'
 
-React.renderComponent(<Timer options={OPTIONS} />, document.getElementById("container"));
+let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+
+React.render(
+	<Timer options={OPTIONS} />,
+	document.getElementById("container")
+);
 
 ```
 
 ## Development
 
-Initial set up, run:
-    
     npm install
+    npm test
+    npm start
 
 ## License
 

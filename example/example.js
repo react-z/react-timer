@@ -1,11 +1,18 @@
-import React from 'react'
-import Timer from '../lib/timer'
+import Timer from '../lib/Timer' // 'react-timer'
+import ReactDOM from 'react-dom'
+import React, { Component, PropTypes } from 'react'
 
-// delay is the delay on showing the update of the timer,
-// it does not effect the timer clock.
-let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+class TestComponent extends Component {
 
-React.render(
-	<Timer options={OPTIONS} />,
-	document.getElementById("container")
-);
+  render () {
+    /* delay is just the delay on showing the update of the timer */
+    let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+    return (
+      <div>
+        <Timer options={OPTIONS} />
+      </div>
+    )
+  }
+}
+
+ReactDOM.render( <TestComponent />, document.getElementById('root') )

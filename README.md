@@ -18,15 +18,13 @@ npm install react-timer --save
 ## Use
 
 ```javascript
-import Dropdown from '../lib/Timer' // 'react-timer'
+import Dropdown from 'react-timer'
 import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
 
 class TestComponent extends Component {
-  // delay is the delay on showing the update of the timer,
-  // it does not effect the timer clock.
+  /* delay is just the delay on showing the update of the timer */
   let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
-
   render () {
     return (
       <div>

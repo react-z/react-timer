@@ -24,7 +24,7 @@ import React, { Component, PropTypes } from 'react'
 
 class TestComponent extends Component {
   /* delay is just the delay on showing the update of the timer */
-  let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
+  const OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
   render () {
     return (
       <div>

@@ -18,7 +18,7 @@ npm install react-timer --save
 ## Use
 
 ```javascript
-import Dropdown from 'react-timer'
+import Timer from 'react-timer'
 import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
 

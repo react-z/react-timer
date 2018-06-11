@@ -4,6 +4,10 @@
 
 react-timer is a simple timer component using react.
 
+![Example image of react-timer](/example.png)
+
+[Click here for a demo](https://whispering-shelf-76879.herokuapp.com)
+
 ## Install
 
 ``` js

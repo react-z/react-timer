@@ -1,4 +1,3 @@
-import expect from 'expect'
 import test from 'tape'
 import SecondsTohhmmss from '../lib/SecondsTohhmmss'
 

@@ -1,4 +1,3 @@
-import expect from 'expect'
 import test from 'tape'
 import React from 'react'
 import { mount } from 'enzyme'

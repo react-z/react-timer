@@ -1,13 +1,10 @@
 import expect from 'expect'
 import test from 'tape'
 import React from 'react'
-import { shallow, mount } from 'enzyme'
-import { setupJsdom } from './jsdom'
+import { mount } from 'enzyme'
 import Timer from '../src/Timer'
 
 test('Timer component', (t) => {
-  setupJsdom()
-
   let OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
   const wrapper = mount(

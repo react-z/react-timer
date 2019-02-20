@@ -1,4 +1,4 @@
-import Timer from '../lib/Timer' // 'react-timer'
+import Timer from '../src/Tximer' // 'react-timer'
 import ReactDOM from 'react-dom'
 import React, { Component, PropTypes } from 'react'
 

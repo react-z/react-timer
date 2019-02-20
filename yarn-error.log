@@ -1,0 +1,82 @@
+Arguments: 
+  /Users/steven/.nodenv/versions/10.5.0/bin/node /Users/steven/.nodenv/versions/10.5.0/bin/yarn
+
+PATH: 
+  /Users/steven/.nodenv/versions/10.5.0/bin:/usr/local/Cellar/nodenv/1.1.2/libexec:/Users/steven/.nodenv/shims:/Users/steven/.nodenv/bin:/Users/steven/.rbenv/shims:/Users/steven/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/Cellar/yarn/yarn-1.6.0/bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.5.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/steven/xyz/react/react-timer/package.json: Unexpected token } in JSON at position 403
+      at JSON.parse (<anonymous>)
+      at /Users/steven/.nodenv/versions/10.5.0/lib/node_modules/yarn/lib/cli.js:1631:59
+      at Generator.next (<anonymous>)
+      at step (/Users/steven/.nodenv/versions/10.5.0/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/steven/.nodenv/versions/10.5.0/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "react-timer",
+    "version": "1.0.2",
+    "description": "A simple timer component",
+    "main": "lib/Timer.js",
+    "author": "Steven Iseki <stevenisekimartin@gmail.com>",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/StevenIseki/react-timer.git"
+    },
+    "peerDependencies": {
+      "react": "^16.0.0"
+    },
+    "dependencies": {
+      "prop-types": "^15.6.0",
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.2.3",
+      "@babel/core": "7.3.3",
+      "@babel/preset-env": "7.3.1",
+      "@babel/preset-react": "7.0.0",
+      "babel-loader": "8.0.5",
+      "babel-tape-runner": "^3.0.0",
+      "enzyme": "3.9.0",
+      "enzyme-adapter-react-16": "^1.9.1",
+      "expect": "24.1.0",
+      "html-webpack-plugin": "3.2.0",
+      "jsdom": "13.2.0",
+      "react": "^16.0.0",
+      "react-dom": "^16.0.0",
+      "tape": "4.10.1",
+      "webpack": "4.29.4",
+      "webpack-cli": "3.2.3",
+      "webpack-dev-server": "3.1.14"
+    },
+    "scripts": {
+      "build": "babel src --out-dir lib",
+      "dev": "webpack-dev-server --mode=development --port 3000 --inline --hot --config example/webpack.config",
+      "test": "babel-tape-runner test/*.js"
+    },
+    "keywords": [
+      "react",
+      "react-component",
+      "timer",
+      "react timer",
+      "react-timer",
+      "timer component",
+      "stopwatch",
+      "reacttimer"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

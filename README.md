@@ -4,20 +4,23 @@
 
 react-timer is a simple timer component using react.
 
-![Example image of react-timer](/example.png)
+![](https://raw.githubusercontent.com/StevenIseki/react-timer/master/example/screenshot.gif)
+
 
 [Click here for a demo](https://whispering-shelf-76879.herokuapp.com)
 
 ## Install
 
 ``` js
-npm install react-timer --save
+yarn add react-timer --save
 ```
 ## Versions
 
 #### `1.0.0` uses React `^0.13.0`
 
 #### `1.0.1` uses React `^0.15.1`
+
+#### `1.1.0` uses React `^16.0.0`
 
 ## Use
 
@@ -43,11 +46,17 @@ ReactDOM.render( <TestComponent />, document.getElementById('root') )
 ```
 
 ## Development
+    yarn
+    npm run dev
 
-    npm install
+## Build
+    yarn
     npm run build
-    npm test
-    npm start
+    npm login
+    npm version patch
+    git add -A
+    git push origin master
+    npm publish
 
 ## License
 

@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react'
 import SecondsTohhmmss from './SecondsTohhmmss'
+import PropTypes from 'prop-types'
 
 let offset = null, interval = null
 
@@ -9,6 +9,11 @@ let offset = null, interval = null
  * A simple timer component.
 **/
 export default class Timer extends Component {
+  static get propTypes () {
+    return {
+      options: PropTypes.object
+    }
+  }
 
   constructor(props) {
     super(props)
@@ -69,8 +74,8 @@ export default class Timer extends Component {
       background: "#fff",
       color: "#666",
       border: "1px solid #ddd",
-      margin: "0.25em",
-      padding: "0.75em",
+      marginRight: "5px",
+      padding: "10px",
       fontWeight: "200"
     };
 
@@ -78,7 +83,7 @@ export default class Timer extends Component {
       fontSize: "200%",
       fontWeight: "200",
       lineHeight: "1.5",
-      margin: "0px",
+      margin: "0",
       color: "#666"
     };
 
@@ -92,8 +97,4 @@ export default class Timer extends Component {
       </div>
     )
   }
-}
-
-Timer.propTypes = {
-  options: PropTypes.object
 }

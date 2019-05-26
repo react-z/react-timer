@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer renders correctly and matches snapshot 1`] = `
+<div
+  className="react-timer"
+  style={
+    Object {
+      "margin": "0px",
+      "padding": "2em",
+    }
+  }
+>
+  <h3
+    className="seconds"
+    style={
+      Object {
+        "color": "#666",
+        "fontSize": "200%",
+        "fontWeight": "200",
+        "lineHeight": "1.5",
+        "margin": "0",
+      }
+    }
+  >
+     
+    
+     
+  </h3>
+  <br />
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "border": "1px solid #ddd",
+        "color": "#666",
+        "fontWeight": "200",
+        "marginRight": "5px",
+        "padding": "10px",
+      }
+    }
+  >
+    reset
+  </button>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "border": "1px solid #ddd",
+        "color": "#666",
+        "fontWeight": "200",
+        "marginRight": "5px",
+        "padding": "10px",
+      }
+    }
+  >
+    play
+  </button>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#fff",
+        "border": "1px solid #ddd",
+        "color": "#666",
+        "fontWeight": "200",
+        "marginRight": "5px",
+        "padding": "10px",
+      }
+    }
+  >
+    pause
+  </button>
+</div>
+`;
